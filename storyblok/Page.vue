@@ -1,7 +1,7 @@
 <template>
-  <p>Hier kommt NAV</p>
+  <p class="bg-rose-300">Hier kommt NAV</p>
 
-  <div v-editable="blok" class="px-4">
+  <div v-editable="blok" class="">
     <StoryblokComponent 
     v-for="blok in blok.body" 
     :key="blok._uid" 
@@ -10,6 +10,8 @@
 
   <p>Hier kommt Footer</p>
 </template>
+
+
 
 <script setup>
 defineProps({ blok: Object })

@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: 'Roboto, sans-serif',
+      serif: 'ui-serif',
+      playfair:['Playfair'],
+      nunito:['Nunito']
     },
   },
 }

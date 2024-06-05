@@ -1,6 +1,6 @@
 <template>
     
-    <a v-editable="blok" class="" :href="blok.link.cached_url">
+    <a v-editable="blok" class="" :href="blok.link.cached_url" target="_blank">
     {{ blok.label }}
     </a>
 
