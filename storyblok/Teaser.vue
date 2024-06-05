@@ -5,7 +5,7 @@
         {{ blok.preheadline }}
       </p>
 
-      <h1 v-editable="blok" class="font-playfair font-bold text-5xl">
+      <h1 v-editable="blok" class="font-serif font-bold text-5xl">
         {{ blok.headline }}
       </h1>
 
