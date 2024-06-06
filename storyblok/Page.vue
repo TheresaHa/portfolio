@@ -14,5 +14,6 @@
 
 
 <script setup>
-defineProps({ blok: Object })
+const props = defineProps({ blok: Object })
+
 </script>
