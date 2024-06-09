@@ -1,7 +1,9 @@
 <template>
 
-  <div v-if="blok.is_detail" class="flex flex-wrap flex-row sm:flex-row sm:flex-nowrap pt-20 sm:pt-12 ">
-    <div class="w-full mx-10 mt-10 lg:mx-32 lg:mt-28 md:mx-20 md:mt-20 sm:pt-8">
+<div v-if="blok.is_detail" class="flex-col justify-center">
+
+  <div class="flex flex-wrap flex-row sm:flex-row sm:flex-nowrap pt-20 sm:pt-12 md:mx-12 lg:mx-28 xl:mx-48">
+    <div class="w-full mx-10 mt-10 md:w-1/2 lg:mt-28 md:mt-18 sm:pt-8">
 
       <p v-editable="blok.preheadline" class="font-medium text-rose-300">
         {{ blok.pre_title }}
@@ -14,47 +16,57 @@
       <div v-html="descriptionContent" class="text-slate-500 mt-4 mb-8"></div>
     </div>
 
-    <div v-editable="blok" class="md:w-full w-1/2">
+    <div v-editable="blok" class="w-full md:w-auto">
+      <div class="shadow-lg rounded-2xl space-y-4 p-6 lg:mt-18 md:mx-12 sm:mt-32 m-8">
 
-      <div class="shadow mx-10 mt-4 lg:mx-32 lg:mt-48 md:mx-20 sm:mt-32">
-        <h2>Some Facts:</h2>
-      <p>Created with:</p>
-      <div v-editable="blok" class="flex">
+      <h2 class="font-serif font-bold text-2xl leading-snug">Some Facts:</h2>
+      
+      <div v-editable="blok" class="flex flex-wrap space-x-2">
+        <p class="text-slate-500 text-sm">Created with:</p>
         <StoryblokComponent
           v-for="blok in blok.created_with"
           :key="blok._uid"
           :blok="blok"
         />
       </div>
-
-      <p>Subject:</p>
-      <div v-editable="blok" class="flex">
+      
+      <div v-editable="blok" class="flex flex-wrap space-x-2">
+        <p class="text-slate-500 text-sm">Subject:</p>
         <StoryblokComponent
-          v-for="blok in blok.subject"
-          :key="blok._uid"
-          :blok="blok"
-        />
+            v-for="blok in blok.subject"
+            :key="blok._uid"
+            :blok="blok"
+          />
       </div>
 
-      <p>Tools:</p>
-      <div v-editable="blok" class="flex">
+      <div v-editable="blok" class="flex flex-wrap space-x-2">
+        <p class="text-slate-500 text-sm">Tools:</p>
         <StoryblokComponent
-          v-for="blok in blok.tools"
-          :key="blok._uid"
-          :blok="blok"
-        />
+            v-for="blok in blok.tools"
+            :key="blok._uid"
+            :blok="blok"
+          />
       </div>
-
-      <p v-editable="blok" class="">
+      
+      <p v-editable="blok" class="text-slate-500 text-sm">
         {{ blok.date }}
       </p>
       
       </div>
-
-
-
     </div>
   </div>
+
+  <div v-editable="blok" class="text-center lg:mx-48 md:28 mx-10 my-12">
+    <StoryblokComponent
+          v-for="blok in blok.slider"
+          :key="blok._uid"
+          :blok="blok"
+    />
+
+  </div>
+
+</div>
+  
 
   <div v-else class="flex p-12 shadow-2xl rounded-3xl">
     <div>
