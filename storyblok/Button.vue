@@ -5,7 +5,7 @@
       {{ blok.label }}
       </a>
       <a v-editable="blok" v-else class="border border-slate-500 hover:border-2 hover:border-slate-400 font-medium py-1 px-2 rounded-xl w-fit" 
-      :href="blok.link.cached_url" target="_blank">
+      :href="blok.link.cached_url">
       {{ blok.label }}
     </a>
 </template>
