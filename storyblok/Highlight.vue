@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container flex w-fit bg-rose-100 rounded-xl space-x-2 px-3">
+    <div class="container flex w-fit bg-rose-200 rounded-xl space-x-2 px-3">
         <span v-html="emojiIcon"></span>
         <p v-editable="blok">{{ blok.label }}</p>
     </div>
