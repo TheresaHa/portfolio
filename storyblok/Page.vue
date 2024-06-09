@@ -1,7 +1,7 @@
 <template>
   <div class="mb-12">
     
-      <div v-editable="blok">
+    <div v-editable="blok">
       <StoryblokComponent
       v-for="blok in blok.navigation"
       :key="blok._uid"
@@ -15,7 +15,13 @@
       :blok="blok" />
     </div>
 
-  <p class="text-center text-slate-400 text-sm">© Theresa Haslinger - 2024</p>
+    <div v-editable="blok">
+      <StoryblokComponent
+      v-for="blok in blok.footer"
+      :key="blok._uid"
+      :blok="blok" /> 
+    </div>
+
   </div>
   
 </template>
