@@ -21,7 +21,7 @@
 
       <h2 class="font-serif font-bold text-2xl leading-snug">Some Facts:</h2>
       
-      <div v-editable="blok" class="flex flex-wrap space-x-2">
+      <div v-editable="blok" class="flex flex-wrap space-x-2 space-y-2 items-center">
         <p class="text-slate-500 text-sm">Created with:</p>
         <StoryblokComponent
           v-for="blok in blok.created_with"
@@ -30,7 +30,7 @@
         />
       </div>
       
-      <div v-editable="blok" class="flex flex-wrap space-x-2">
+      <div v-editable="blok" class="flex flex-wrap space-x-2 space-y-2 items-center">
         <p class="text-slate-500 text-sm">Subject:</p>
         <StoryblokComponent
             v-for="blok in blok.subject"
@@ -39,7 +39,7 @@
           />
       </div>
 
-      <div v-editable="blok" class="flex flex-wrap space-x-2">
+      <div v-editable="blok" class="flex flex-wrap space-x-2 space-y-2 items-center">
         <p class="text-slate-500 text-sm">Tools:</p>
         <StoryblokComponent
             v-for="blok in blok.tools"
@@ -56,12 +56,12 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 md:mx-48 lg:mx-48 mx-12 my-12 md:space-x-12 space-y-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:mx-48 lg:mx-48 mx-12 my-12 gap-12">
     <StoryblokComponent
         v-for="blok in blok.sliderItem"
         :key="blok._uid"
         :blok="blok"
-        class="h-auto max-w-full shadow-md rounded-xl"
+        class="h-auto w-full shadow-md rounded-xl"
     />
 
 </div>
@@ -70,7 +70,7 @@
   <div v-else class="sm:flex md:w-3/4 mx-12 p-12 shadow-2xl 
     transition ease-in-out duration-300 hover:bg-gray-100 rounded-3xl space-x-12">
     <div>
-      <p v-editable="blok" class="font-serif font-bold text-xl leading-snug">
+      <p v-editable="blok" class="font-serif font-bold text-3xl leading-snug">
         {{ blok.title }}
       </p>
 
@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <div v-editable="blok" class="w-auto">
+    <div v-editable="blok" class="lg:w-full">
       <img :src="blok.image.filename" :alt="blok.image.alt" class="md:rounded-3xl rounded-xl sm:rounded-2xl" />
     </div>
   </div>
