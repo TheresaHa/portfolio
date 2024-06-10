@@ -9,7 +9,7 @@ https://portfolio-three-wine-14.vercel.app/
 
 
 To check out my design and component schema visit the figma project:
-https://www.figma.com/design/3stT63y9uXA3Q2rXaX8UOK/Headless-CMS---Portfolio?node-id=173-376&t=g6ACgMAjLB7v71Ia-1
+https://www.figma.com/design/3stT63y9uXA3Q2rXaX8UOK/Headless-CMS---Portfolio?node-id=17-188&t=g6ACgMAjLB7v71Ia-1
 
 
 
