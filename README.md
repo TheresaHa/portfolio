@@ -16,3 +16,6 @@ https://www.figma.com/design/3stT63y9uXA3Q2rXaX8UOK/Headless-CMS---Portfolio?nod
 For my Github Repository visit:
 https://github.com/TheresaHa/portfolio
 
+Presentation:
+https://www.canva.com/design/DAGHuvRImPo/raWlL6dmnHpRMXrKQHCGJg/edit?utm_content=DAGHuvRImPo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
