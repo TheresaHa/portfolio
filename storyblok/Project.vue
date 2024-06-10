@@ -56,25 +56,27 @@
     </div>
   </div>
 
-  <div v-editable="blok" class="text-center lg:mx-48 md:28 mx-10 my-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:mx-48 lg:mx-48 mx-12 my-12 md:space-x-12 space-y-12">
     <StoryblokComponent
-          v-for="blok in blok.slider"
-          :key="blok._uid"
-          :blok="blok"
+        v-for="blok in blok.sliderItem"
+        :key="blok._uid"
+        :blok="blok"
+        class="h-auto max-w-full shadow-md rounded-xl"
     />
 
-  </div>
+</div>
 
 </div>
-  
-
-  <div v-else class="flex p-12 shadow-2xl rounded-3xl">
+  <div v-else class="sm:flex md:w-3/4 mx-12 p-12 shadow-2xl 
+    transition ease-in-out duration-300 hover:bg-gray-100 rounded-3xl space-x-12">
     <div>
-      <p v-editable="blok">
+      <p v-editable="blok" class="font-serif font-bold text-xl leading-snug">
         {{ blok.title }}
       </p>
 
-      <div v-html="descriptionContent" class="text-slate-500 mt-4 mb-8"></div>
+      <p v-editable="blok" class="text-slate-500 mt-4 mb-8">
+        {{ blok.preview_text }}
+      </p>
 
       <div v-editable="blok" class="space-x-2 my-5">
         <StoryblokComponent
@@ -85,8 +87,8 @@
       </div>
     </div>
 
-    <div v-editable="blok" class="w-full">
-      <img :src="blok.image.filename" :alt="blok.image.alt" />
+    <div v-editable="blok" class="w-auto">
+      <img :src="blok.image.filename" :alt="blok.image.alt" class="md:rounded-3xl rounded-xl sm:rounded-2xl" />
     </div>
   </div>
 </template>
