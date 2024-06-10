@@ -1,12 +1,15 @@
 
-# Storyblok quick starter project
+# Storyblok portfolio project
 
-Welcome to this sample project for Nuxt!
-This project serves as a quick starter for integrating Storyblok, a headless CMS, into your web development projects.
+Welcome to my portfolio project form the elective subject "Headless Web Development"
 
-For starting, you can access to the `storyblok-demo` folder.
-In the folder you have some files like:
+To see the deployed the project visit following URL:
+https://portfolio-theresaha-theresa-s-projects.vercel.app/
+https://portfolio-three-wine-14.vercel.app/
 
-- `nuxt.config.js`: the configuration with Storyblok API;
-- `pages/index.vue`: the initialization of the Storyblok Bridge.
+
+To check out my design and component schema visit the figma project:
+https://www.figma.com/design/3stT63y9uXA3Q2rXaX8UOK/Headless-CMS---Portfolio?node-id=173-376&t=g6ACgMAjLB7v71Ia-1
+
+
 
