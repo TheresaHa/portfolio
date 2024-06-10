@@ -1,6 +1,6 @@
 <template>
 
-  <div class="flex flex-wrap-reverse flex-row-reverse sm:flex-row sm:flex-nowrap pt-8 sm:pt-12 md: ">
+  <div class="flex flex-wrap-reverse flex-row-reverse sm:flex-row sm:flex-nowrap pt-8 sm:pt-12 ">
     <div class="w-full mx-10 mt-10 lg:mx-32 lg:mt-32 md:mx-20 md:mt-20 sm:pt-8">
       <p v-editable="blok.preheadline" class="font-medium text-rose-300">
         {{ blok.preheadline }}
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div v-editable="blok" class="md:w-full w-1/2">
+    <div v-editable="blok" class="md:w-full md:mr-0 w-1/2 justify-self-end">
       <img :src="blok.image.filename" :alt="blok.image.alt">
     </div>
   </div>
