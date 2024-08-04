@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div v-editable="blok" class="md:w-full md:mr-0 w-1/2 justify-self-end">
+    <div v-editable="blok" class="md:w-full md:mr-0 w-1/2 xl:flex xl:justify-end">
       <img :src="blok.image.filename" :alt="blok.image.alt">
     </div>
   </div>
